@@ -1,0 +1,8 @@
+
+echo !empty($statusMsg)?'.$statusMsg['status'].'">'.$statusMsg['msg'].'
+':''; ?>
+
+if($verified == 1){ ?>
+    <p>Mobile No: echo $recipient_no; ?>p>
+    <p>Verification Status: <b>Verifiedb>p>
+} ?>

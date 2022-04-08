@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>ICL</title>
+<script type="text/javascript">
+	function refreshPage(){
+		if(confirm("Are you sure, want to refresh?")){
+			location.reload();
+		}				
+	}
+</script>
+
+<link rel="icon"  type="image/png" sizes="128×128" href="images/JKP.png">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv = 'cache-control' content = 'no-cache'>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://www.icljk.com/ICL-CONTAINER.css">
+<style>
+ input[type=submit] {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+input[type=submit1]{
+        background-color: red;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+  height: auto;                                       
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: auto) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body class="ICL-CONTAINER ICL-white">
+<div class="ICL-CONTAINER ICL-white name">
+<img src="images/LOGO.png" style="width:20%;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://icljk.com/online.php">
+    <img src="images/online.png" width="15%" height="12%"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="/index.php"><input type="submit" value="Home"></a>
+<img src="images/india.gif" width="10%" height="75px" align="right">
+</div>
+
+<table width="100%" border="1">
+  <tr>
+    <th scope="col">NEWS</th>
+    <th scope="col">STUDENT ENTRY</th>
+    <th scope="col">ONLINE EDU</th>
+    <th scope="col">DANGER</th>
+  </tr>
+  <tr>
+    <td width="25%"><form action="/insertnews.php" method="post"> 
+
+<p align="center">Enter News No:-
+<input name="quantity3" type="text" size="3">
+<br>
+Enter News:-[ 5 News are Sufficient and Fit]
+<input name="quantity2" type="text" size="30">
+<br>
+<input type="submit"  value="Submit News" ></p>
+</form>
+</td>
+ <td width="25%" align="center">
+ <form method="post"  enctype="multipart/form-data" action="/insertdata.php">
+
+STUDENT ADMISSION FORM  
+<input type="submit" name="submit" value="Upload New Student Record">
+ </form>
+</td>
+    <td width="25%"><center>
+<a  href="https://icljk.com/d3.php">
+ <input type="submit" value="View Online Entry with Image"></a><br/><br/>
+<a  href="https://icljk.com/d5.php">
+    <input type="submit" value="View Online Entry without Image"></a>
+    </center></td>
+    <td><center>
+<a  href="https://icljk.com/d4.php">
+     <input type="submit1" value="Delete Online All Entry.......DANGEROUS....."></a>
+   </center></td>
+  </tr>
+  <tr>
+    <td align="center">
+Note :If Administration wants to delete particular News , Before deleting News 
+Display All News
+<h4 align="center"> All News Display </h4>
+<a href="d6.php"><input type="submit" value="VIEW NEWS"></a>
+&nbsp;</td>
+    <td align="center">
+<a  href="https://icljk.com/d1.php">
+    <input type="submit" value="View Student with Image"></a>
+  <br><br>
+<a  href="https://icljk.com/d.php">
+     <input type="submit" value="View Student without Image"></a>
+  
+&nbsp;</td>
+    <td align="center"><p>&nbsp;</p>
+    <p><a href="https://icljk.com/d8.php">
+      <input type="submit" value="Download Regular Student Data">
+    </a>
+    <a  href="https://icljk.com/d9.php">
+    <input type="submit" value="Download Online Student Data">
+    </a></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+<td align="center">
+<form action="/deletenews.php" method="post">
+<p align="left">Enter News No to Delete &nbsp; :&nbsp;
+<input name="quantity3" type="integer" size="3" />&nbsp;&nbsp; 
+<input type="submit" style="float: Center" value="Delete News" /></p>
+</form></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr>
+</body>
+</html>
